@@ -41,7 +41,9 @@
 <body>
 
 <div class="site-wrap">
-    {% include 'module/page_header.html
+
+    <div th:replace="page_header"></div>
+
     <div class="hero overlay" style="background-image: url('images/edit/bg/stadium_bg.jpg');">
         <div class="container">
             <div class="row align-items-center">
@@ -96,7 +98,7 @@
         </div>
     </div>
 
-    {% include 'module/page_footer.html
+    <div th:replace="page_footer"></div>
 
 </div>
 <!-- .site-wrap -->
